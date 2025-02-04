@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Interactive Web Page</h1>
+
+        <button id="toggle-btn">Hover Me</button>
+        
+        <div class="box"></div>
+
+        <input type="number" id="length" placeholder="Length">
+        <input type="number" id="width" placeholder="Width">
+        <button onclick="calculateArea()">Calculate Area</button>
+        <p id="area-result"></p>
+
+        <button onclick="toggleModal()">Open Modal</button>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <p>This is a modal window</p>
+                <button onclick="toggleModal()">Close</button>
+            </div>
+        </div>
+
+        <button onclick="triggerAnimation()">Animate Box</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
